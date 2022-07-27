@@ -1,0 +1,19 @@
+{
+  "name": "Pulsar documentation",
+  "version": "0.0.1",
+  "description": "This is the documentation for the Pulsar editor. Here you can get more information about us. Here you&#39;ll find all the information you should ever need about the editor and troubleshooting tips.",
+  "main": "index.js",
+  "authors": {
+    "name": "Josh",
+    "email": ""
+  },
+  "repository": "https://github.com/pulsar-edit/docs/Pulsar documentation",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
