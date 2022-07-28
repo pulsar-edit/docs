@@ -251,3 +251,37 @@ Returns a list of user objects:
   {"login":"anotherperson"},
 ]
 ```
+
+##### Getting Featured Packages / Themes 
+
+###### GET /api/packages/featured 
+
+List the currently featured packages. _This endpoint was previously undocumented._
+
+Returns a list of manually assigned featured packages.
+
+Return value is similar to `GET /api/packages` 
+
+###### GET /api/themes/featured 
+
+List the currently featured themes. _This endpoint was previously undocumented._
+
+While currently this endpoint is not implemented, it will return a list of manually assigned featured packages.
+
+Return value is similar to `GET /api/packages`
+
+##### Installing / Uninstalling Packages 
+
+###### GET /api/packages/:name/versions/:version/tarball 
+
+Redirects to GitHub Tarball download. _This endpoint was previously undocumented._
+
+###### POST /api/packages/:name/versions/:version/events/uninstall 
+
+Register a package uninstallation on the backend. Requires Authentication. _This endpoint was previously undocumented._
+
+Returns an ok status message.
+
+```json
+{ "ok": true }
+```
